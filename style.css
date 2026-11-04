@@ -288,7 +288,24 @@ margin-bottom: 25px;
     border-radius: 10px;
 }
 
+.slide {
+    display: none;
+    opacity: 0;
+}
 
+.slide.active {
+    display: block;
+    animation: fadeIn 0.6s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 
 

@@ -4,13 +4,13 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title> My Concert Experience! </title>
-	<link rel="icon" href="vidpics/meimei.png" type="image/png">
+	<link rel="icon" href="meimei.png" type="image/png">
 </head>
 <body>
 <div class="banner"></div>
 <div class="banner">
 
-<a href="concert.html" target="_blank" class="banner-btn">My Concert Experience</a>
+
 <a href="https://open.spotify.com/artist/7gW0r5CkdEUMm42w9XpyZO" target="_blank" class="banner-btn">Spotify</a>
 <a href="https://music.apple.com/us/artist/laufey/1504424880" target="_blank" class="banner-btn">Apple Music</a>
 <a href="https://linktr.ee/thelaufeybookclub" target="_blank" class="banner-btn">Book Club</a>
@@ -27,92 +27,83 @@ A Matter of Time Tour 10/19/2025
 <p class="top">
 	Attending Laufey’s A Matter of Time tour on October 19, 2025
 
-
 </p>
 
-<img class="intro" src="vidpics/intro.JPG">
+<div class="soundscape">
 
+    <h2>Relive the Night</h2>
 
+    <p>Listen to the sounds of my concert experience.</p>
 
-
-<div class="vidcontainer">
-<video class="vid1" controls> 
-<source src="vidpics/vid1.Mp4" type="video/mp4">
-</video>
-
-<p class="firsttxt">
-CLOCKWORK
-
-</p>
+    <audio controls>
+        <source src="intro.mp3" type="audio/mpeg">
+    </audio>
 
 </div>
-<!-- first video/clockwork -->
 
 
 
 
-<div class="vidcontainer">
-	<video class="vid1" controls>
-		<source src="vidpics/vid2.Mp4" type="video/mp4">
-	</video>
-	
-<p class="sectxt">
-	"Lover Girl."
-	
-</p>
+<div class="slideshow">
+
+    <button class="arrow left" onclick="changeSlide(-1)" aria-label="Previous video">
+        &#10094;
+    </button>
+
+    <div class="slide">
+    <iframe
+        class="concert-video"
+        src="https://www.youtube.com/embed/dIQnOzTdvCA?enablejsapi=1&origin=https://lamvic77.github.io"
+        referrerpolicy="strict-origin-when-cross-origin"
+        title="Lover Girl"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+    </iframe>
+
+    <p class="song-title">"Lover Girl"</p>
 </div>
-<!-- second video/lover girl -->
 
+    <div class="slide">
+        <iframe class="concert-video"
+            src="https://www.youtube.com/embed/NcAInsSFHdM"
+            title="Silver Lining"
+            referrerpolicy="strict-origin-when-cross-origin"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 
+            allowfullscreen>
+        </iframe>
+        <p class="song-title">"Silver Lining"</p>
+    </div>
 
+    <div class="slide">
+        <iframe class="concert-video"
+            src="https://www.youtube.com/embed/Cdye4YuGmEQ"
+            title="Too Little, Too Late"
+            referrerpolicy="strict-origin-when-cross-origin"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 
-<div class="vidcontainer">
-	<video class="vid1" controls>
-		<source src="vidpics/vid3.Mp4" type="video/mp4">
-	</video>
+            allowfullscreen>
+        </iframe>
+        <p class="song-title">"Too Little, Too Late"</p>
+    </div>
 
+    <div class="slide">
+        <iframe class="concert-video"
+            src="https://www.youtube.com/embed/laWWibQ5dN4"
+            title="Sabatoge"
+            referrerpolicy="strict-origin-when-cross-origin"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 
-<p class="thrtxt">
-	"Silver Lining."
+            allowfullscreen>
+        </iframe>
+        <p class="song-title">"Sabatoge"</p>
+    </div>
 
-</p>
+    <button class="arrow right" onclick="changeSlide(1)" aria-label="Next video">
+        &#10095;
+    </button>
+
 </div>
-<!-- third video/silver lining -->
-
-
-<div class="vidcontainer">
-	<video class="vid1" controls>
-		<source src="vidpics/vid4.Mp4" type="video/mp4">
-	</video>
-
-<p class="forthtxt">
-	
-	"Too Little, Too Late."
-	
-</p>
-</div>
-<!-- forth video/too little too late -->
-
-
-<div class="vidcontainer">
-	<video class="vid1" controls>
-		<source src="vidpics/vid12.Mp4" type="video/mp4">
-	</video>
-
-<p class="finaltxt">
-	
-	"Sabatoge."
-
-</p>
-</div>
-<!-- outro video/sabatoge -->
-
-
-
-
-
-</h>
-
 
 <script src="script.js"></script>
 

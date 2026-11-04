@@ -170,11 +170,123 @@ margin-bottom: 25px;
 
 
 
+/* VIDEO SLIDESHOW */
+
+.slideshow {
+    position: relative;
+    width: 80%;
+    max-width: 850px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.slide {
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+.concert-video {
+    width: 100%;
+    max-height: 500px;
+    display: block;
+    margin: 0 auto;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.song-title {
+    font-size: 25px;
+    color: whitesmoke;
+    font-family: "cormorant", sans-serif;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.arrow {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    z-index: 2;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 24px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.65);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.arrow.left {
+    left: -55px;
+}
+
+.arrow.right {
+    right: -55px;
+}
+
+/* Make the slideshow responsive on phones */
+@media (max-width: 600px) {
+    .slideshow {
+        width: 80%;
+    }
+
+    .arrow.left {
+        left: -35px;
+    }
+
+    .arrow.right {
+        right: -35px;
+    }
+
+    .arrow {
+        width: 32px;
+        height: 32px;
+        font-size: 18px;
+    }
+}
 
 
 
+.soundscape {
+    text-align: center;
+    color: whitesmoke;
+    margin: 40px auto;
+    font-family: "cormorant", sans-serif;
+}
 
+.soundscape h2 {
+    font-size: 40px;
+    font-family: "meaculpa", sans-serif;
+}
 
+.soundscape p {
+    font-size: 20px;
+}
+
+.soundscape audio {
+    width: 80%;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.concert-video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    display: block;
+    margin: 0 auto;
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+}
 
 
 
